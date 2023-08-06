@@ -1,4 +1,10 @@
-import { Table, TableHead, TableHeadCell, TableRow, TableCell } from "./TransactionHistory.styled";
+import {
+  Table,
+  TableHead,
+  TableHeadCell,
+  TableRow,
+  TableCell,
+} from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (

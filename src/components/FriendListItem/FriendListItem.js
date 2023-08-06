@@ -1,5 +1,4 @@
-import { Status } from "./FriendListItem.styled";
-
+import { Status } from './FriendListItem.styled';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (

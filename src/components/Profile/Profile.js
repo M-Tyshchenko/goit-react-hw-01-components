@@ -7,7 +7,7 @@ import {
   Stats,
   Stat,
   StatLabel,
-  StatQuantity
+  StatQuantity,
 } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
