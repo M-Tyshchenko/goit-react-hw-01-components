@@ -8,7 +8,7 @@ import {
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <Table className="transaction-history">
+    <Table>
       <TableHead>
         <tr>
           <TableHeadCell>Type</TableHeadCell>
