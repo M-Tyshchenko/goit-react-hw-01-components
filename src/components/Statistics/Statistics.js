@@ -9,14 +9,14 @@ import {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <StatisticsSection className="statistics">
-      <Title className="title">{title}</Title>
+    <StatisticsSection>
+      <Title>{title}</Title>
 
-      <Stats className="stat-list">
+      <Stats>
         {stats.map(stat => (
-          <Stat key={stat.id} className="item">
-            <StatLabel className="label">{stat.label}</StatLabel>
-            <StatPercentage className="percentage">
+          <Stat key={stat.id}>
+            <StatLabel>{stat.label}</StatLabel>
+            <StatPercentage>
               {stat.percentage}%
             </StatPercentage>
           </Stat>
