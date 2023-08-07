@@ -12,26 +12,26 @@ import {
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <Container className="profile">
-      <UserDescr className="description">
-        <Avatar src={avatar} alt={username} className="avatar" />
-        <UserName className="name">{username}</UserName>
-        <Description className="tag">@{tag} </Description>
-        <Description className="location">{location}</Description>
+    <Container>
+      <UserDescr>
+        <Avatar src={avatar} alt={username} />
+        <UserName>{username}</UserName>
+        <Description>@{tag} </Description>
+        <Description>{location}</Description>
       </UserDescr>
 
-      <Stats className="stats">
+      <Stats>
         <Stat>
-          <StatLabel className="label">Followers</StatLabel>
-          <StatQuantity className="quantity">{stats.followers}</StatQuantity>
+          <StatLabel>Followers</StatLabel>
+          <StatQuantity>{stats.followers}</StatQuantity>
         </Stat>
         <Stat>
-          <StatLabel className="label">Views</StatLabel>
-          <StatQuantity className="quantity">{stats.views}</StatQuantity>
+          <StatLabel>Views</StatLabel>
+          <StatQuantity>{stats.views}</StatQuantity>
         </Stat>
         <Stat>
-          <StatLabel className="label">Likes</StatLabel>
-          <StatQuantity className="quantity">{stats.likes}</StatQuantity>
+          <StatLabel>Likes</StatLabel>
+          <StatQuantity>{stats.likes}</StatQuantity>
         </Stat>
       </Stats>
     </Container>
